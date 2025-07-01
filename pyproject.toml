@@ -19,7 +19,7 @@ classifiers = [
     "Topic :: Software Development :: User Interfaces",
     "Topic :: Software Development :: Libraries :: Python Modules",
 ]
-packages = [{include = "myui"}]
+packages = [{include = "pymyui"}]
 
 [tool.poetry.dependencies]
 python = ">=3.11,<3.14"
