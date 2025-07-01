@@ -40,6 +40,21 @@ class UserForm:
             layout.add_stretch()
 
             input_widget = layout.add_widget(self.app.add_input(placeholder, width=300), alignment="left")
+
+            match key:
+
+                case "phone":
+                    input_widget.add_key_pressed_callback(
+                        self._format_number,
+                        lambda text: len(text) < 13
+                    )
+
+                case "cpf":
+                    input_widget.add_key_pressed_callback(
+                        self._format_cpf,
+                        lambda text: len(text) < 11
+                    )
+
             self.inputs[key] = input_widget
 
     def _build_submit_button(self):
@@ -61,6 +76,14 @@ class UserForm:
         for key, input_widget in self.inputs.items():
             print(f"{key.capitalize()}: {input_widget.text()}")
         print("===========================")
+
+        self.app.window.notify("Dados enviados com sucesso!", background_color="#4CAF50", corner="top-left")
+
+    def _format_number(self, number):
+        return f"({number[:2]}) {number[2:4]} {number[4:7]}-{number[7:]}"
+
+    def _format_cpf(self, cpf):
+        return f"{cpf[:3]}.{cpf[3:6]}.{cpf[6:9]}-{cpf[9:]}"
 
     def run(self):
         self.app.run()
