@@ -334,8 +334,8 @@ Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICE
 ## 👨‍💻 Autor
 
 **Emerson Silva**
-- GitHub: [@seu-usuario](https://github.com/seu-usuario)
-- LinkedIn: [Emerson Silva](https://linkedin.com/in/seu-perfil)
+- GitHub: [@ASCII000](https://github.com/ASCII000)
+- LinkedIn: [Emerson Silva](https://www.linkedin.com/in/emerson-silva-361048266)
 
 ## 🙏 Agradecimentos
 
