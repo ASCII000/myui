@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "myui"
+version = "0.1.0"
+description = "A simple package for create fast interfaces"
+authors = ["Emerson Silva"]
+license = "MIT 1.0"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.14"
+pyside6 = "^6.9.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pylint.'TYPECHECK']
+extension-pkg-allow-list = ["PySide6"]
