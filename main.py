@@ -2,7 +2,7 @@
 Arquivo para testes da aplicação
 """
 
-from myui.controllers.app import MyApp
+from pymyui.controllers.app import MyApp
 
 
 class UserForm:

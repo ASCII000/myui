@@ -1,4 +1,4 @@
-from myui.controllers.app import MyApp
+from pymyui.controllers.app import MyApp
 
 # Inicializa a aplicação
 app = MyApp(

@@ -10,7 +10,7 @@ from typing import Literal
 
 from PySide6.QtWidgets import QApplication
 
-from myui.components import (
+from pymyui.components import (
     MyWindow,
     MyLayout,
     MyLabel,
