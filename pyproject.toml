@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "pymyui"
-version = "1.0.0"
+version = "1.0.1"
 description = "A simple and intuitive Python framework for creating fast desktop interfaces"
 authors = ["Emerson Silva"]
 license = "MIT"
