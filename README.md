@@ -7,6 +7,15 @@
 
 **MyUI** é um framework Python minimalista e intuitivo para criação rápida de interfaces gráficas desktop, construído sobre o PySide6. Desenvolvido com foco na simplicidade e produtividade, oferece uma API fluente e componentes pré-estilizados para acelerar o desenvolvimento de aplicações desktop.
 
+# 🚩 Exemplo
+
+Exemplo de codigo para objetividade do projeto ser algo intuitivo e simples!
+
+![Animation](https://github.com/user-attachments/assets/ddc19c8e-d65e-475f-b58d-1cb88d9b45d2)
+
+![code](https://github.com/user-attachments/assets/59ca1e42-d5b2-4f64-9597-009f0aa6a97a)
+
+
 ## ✨ Principais Características
 
 ### 🎯 **Simplicidade Extrema**
