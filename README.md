@@ -16,6 +16,13 @@ Exemplo de codigo para objetividade do projeto ser algo intuitivo e simples!
 ![code](https://github.com/user-attachments/assets/59ca1e42-d5b2-4f64-9597-009f0aa6a97a)
 
 
+## 📦 Disponível via Pypi
+Gostaria de testar essa demo em seu projeto de forma facil?
+
+```bash
+pip install pymyui
+```
+
 ## ✨ Principais Características
 
 ### 🎯 **Simplicidade Extrema**
@@ -70,7 +77,7 @@ poetry shell
 
 ### Via pip
 ```bash
-pip install pyside6
+pip install pymyui
 ```
 
 ## 🚀 Primeiros Passos
