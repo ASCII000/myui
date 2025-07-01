@@ -1,43 +1,35 @@
+import random
+
 from pymyui.controllers.app import MyApp
 
-# Inicializa a aplicação
+# Cria uma aplicação com configurações personalizadas
 app = MyApp(
-    width=400,
+    width=800,
     height=200,
     background_color="#363333",
-    font_family="Segoe UI",
     primary_color="#707070",
     secondary_color="#C8C8C8",
+    font_family="Segoe UI"
 )
 
-# Layout horizontal para agrupar label e input
-layout = app.add_layout("horizontal")
+# Adiciona um layout vertical
+layout = app.add_layout("vertical")
 
-# Adiciona label
-layout.add_widget(app.add_label("Nome:"), alignment="left")
+# Cria componentes
+label = app.add_label("Olá, MyUI!", size_text=16, color_text="#ffffff")
+button = app.add_button("Clique Aqui", variant="success")
 
-# Adiciona input com placeholder
-input_nome = layout.add_widget(app.add_input("Digite seu nome", width=200), alignment="left")
+# Acao do botao
+cool_names = [
+    "Alice", "Bob", "Charlie", "Diana", "Eva", "Fiona", "Grace", "Helen", "Ivy", "Judy"
+]
 
-# Função de clique do botão
-def on_click():
-    nome = input_nome.text()
-    if nome == "":
-        app.window.notify(
-            "Digite seu nome antes de enviar!",
-            background_color="#866E6E",
-            corner="top-left",
-        )
-    else:
-        print(f"Nome digitado: {nome}")
+button.onClick(lambda: label.setText(f"Olá, {random.choice(cool_names)}!"))
 
-# Layout para o botão
-button_layout = app.add_layout("horizontal")
-
-# Adiciona botão
-btn = app.add_button("Enviar", variant="success", font_size=12, width=200)
-btn.onClick(on_click)
-button_layout.add_widget(btn, alignment="center")
+# Adiciona componentes ao layout
+layout.setContentsMargins(20, 20, 20, 20)
+layout.add_widget(label, alignment="center")
+layout.add_widget(button, alignment="center")
 
 # Executa a aplicação
 app.run()
